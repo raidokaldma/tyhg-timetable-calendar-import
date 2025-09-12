@@ -1,0 +1,23 @@
+{
+  "name": "tyhg-timetable-calendar-import",
+  "version": "1.0.0",
+  "description": "Generates importable calendar events from https://tyhg.edu.ee/ site",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.ts",
+    "test": "node --test --experimental-test-module-mocks --disable-warning=ExperimentalWarning",
+    "test:update": "node --test --experimental-test-module-mocks --disable-warning=ExperimentalWarning --test-update-snapshots"
+  },
+  "dependencies": {
+    "jsdom": "^26.1.0"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
